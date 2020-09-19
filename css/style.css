@@ -1,0 +1,251 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    margin-bottom: -25px;
+    transition: 1s;
+}
+
+h2 {
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+h3{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+h4{
+    font-size: 25px;
+    margin-bottom: -5px;
+}
+
+
+h1:hover{
+    color: rgb(68, 68, 68);
+    transform: scale(1.2);
+}
+
+/* header */
+
+header{
+    background: #3131318a;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+header .logo img{
+    height: 90px;
+}
+
+header nav{
+    width: 600px;
+    margin-left: 30px;
+    /* background-color: rgb(77, 61, 61); */
+}
+
+header nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 35px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header nav ul li a:hover{
+    color: #b8b8b88a;
+}
+
+/* home */
+#home{
+    position: relative;
+}
+
+.img-home{
+    background-image: url(../assets/img/img-home/img-home_car2.jpg);
+    background-position: center;
+    height: 100vh;
+}
+
+.title {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+}
+
+#home .title h2{
+    width: 250px;
+}
+
+/* statistics */
+
+#statistics{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(42, 42, 42);
+}
+
+#statistics .statistics-detail{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#statistics .statistics-detail img{
+    height: 140px;
+    filter: invert(100%);
+}
+
+#statistics .statistics-detail span{
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+/* other car */
+
+#othercar{
+    text-align: center;
+    padding: 80px 0;
+}
+
+.list-car{
+    display: flex;
+    justify-content: space-around;
+}
+
+.othercar-car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.othercar-car img{
+    height: 315px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.othercar-car img:hover{
+    height: 315px;
+    transform: scale(1.2);
+}
+
+/* Story */
+
+#story{
+    display: flex;
+}
+
+.col {
+    width: 50%;
+}
+#story .text{
+    background-color: rgb(42, 42, 42);
+    padding: 200px 50px;
+    box-sizing: border-box;
+}
+
+#story .text p{
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#story .img img{
+    transition: 0.5s;
+}
+
+#story .img:hover img{
+    transform: rotateY(160deg);
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.473));
+}
+
+/* contact us */ 
+
+#contactus{
+    display: flex;
+}
+
+#contactus .map{
+    overflow: hidden;
+}
+
+#contactus .newsletter{
+    background-color: rgb(42, 42, 42);
+}
+
+#contactus .newsletter form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#contactus .newsletter form label{
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input#text2, input#text1 {
+    padding: 4px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    margin-top: 50px;
+    border: none;
+    color: #2a2a2a;
+    background-color: white;
+    padding: 13px 34px;
+    font-weight: 600;
+}
+
+/* footer */
+
+footer{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+footer div a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-networks a img{
+    height: 35px;
+    filter: invert(100%);
+    margin-right: 38px;
+}
