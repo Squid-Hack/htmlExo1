@@ -83,10 +83,16 @@ header nav ul li a:hover{
     position: relative;
 }
 
-.img-home{
+/* .img-home{
     background-image: url(../assets/img/img-home/img-home_car2.jpg);
     background-position: center;
     height: 100vh;
+} */
+
+.img-home{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .title {
@@ -97,6 +103,31 @@ header nav ul li a:hover{
 
 #home .title h2{
     width: 250px;
+}
+
+/* slider */
+
+.slider {
+    margin-bottom: -4px;
+    display: flex;
+    transition: 0.5s;
+}
+
+#arrow-pre{
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    z-index: 2;
+}
+
+#arrow-next{
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: rotateZ(180deg);
+    z-index: 2;
 }
 
 /* statistics */
